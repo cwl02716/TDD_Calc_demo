@@ -21,4 +21,9 @@ public class Calc
    {
       return a * b;
    }
+
+   static public double divide (int a, int b)
+   {
+      return (double)a / b;
+   }
 }

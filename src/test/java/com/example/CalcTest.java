@@ -17,4 +17,10 @@ public class CalcTest
       assertTrue("Calc subtract incorrect", 1 == Calc.subtract(3, 2));
    }
    
+   @Test
+   public void testMultiply()
+   {
+      assertTrue("Calc multiply incorrect", 6 == Calc.multiply(2, 3));
+   }
+   
 }

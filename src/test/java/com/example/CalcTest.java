@@ -29,6 +29,11 @@ public class CalcTest
        // Decision encoded in test: division returns a double (floating point)
        // Expect 7 / 2 == 3.5
        org.junit.Assert.assertEquals("Calc divide incorrect", 3.5, Calc.divide(7, 2), 1e-9);
+       //add some error descision like / 0 or / -infinity
+         org.junit.Assert.assertEquals("Calc divide incorrect", Double.POSITIVE_INFINITY, Calc.divide(7, 0), 1e-9);
+         org.junit.Assert.assertEquals("Calc divide incorrect", Double.NEGATIVE_INFINITY, Calc.divide(-7, 0), 1e-9);
+         org.junit.Assert.assertEquals("Calc divide incorrect", Double.NaN, Calc.divide(0, 0), 1e-9);
+         
     }
    
 }

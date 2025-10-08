@@ -23,4 +23,12 @@ public class CalcTest
       assertTrue("Calc multiply incorrect", 6 == Calc.multiply(2, 3));
    }
    
+    @Test
+    public void testDivide()
+    {
+       // Decision encoded in test: division returns a double (floating point)
+       // Expect 7 / 2 == 3.5
+       org.junit.Assert.assertEquals("Calc divide incorrect", 3.5, Calc.divide(7, 2), 1e-9);
+    }
+   
 }
